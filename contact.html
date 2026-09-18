@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,79 +13,91 @@
     <nav>
         <h1 class="logo">KYLE</h1>
 
-```
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-</nav>
-```
-
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main class="page">
 
-```
-<h2>Contact Me</h2>
+    <h2>Contact Me</h2>
 
-<div class="contact-container">
+    <div class="contact-container">
 
-    <div class="contact-info">
+        <div class="contact-info">
 
-        <h3>Let's Connect!</h3>
+            <h3>Let's Connect!</h3>
 
-        <p>
-            If you want to contact me, you can send me
-            a message using the form.
-        </p>
+            <p>
+                If you want to contact me, you can send me
+                a message using the form.
+            </p>
 
-        <p>
-            Email: kyleocariza@example.com
-        </p>
+            <p>
+                Email:
+                <a href="mailto:kyleocariza@example.com">
+                    kyleocariza@example.com
+                </a>
+            </p>
+
+        </div>
+
+        <form
+            class="contact-form"
+            action="https://formsubmit.co/kyleocariza@example.com"
+            method="POST"
+        >
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+            >
+
+            <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Contact"
+            >
+
+            <input
+                type="hidden"
+                name="_captcha"
+                value="false"
+            >
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
 
     </div>
-
-    <form class="contact-form"
-          action="https://formsubmit.co/kyleocariza@example.com"
-          method="POST">
-
-        <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-        >
-
-        <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-        >
-
-        <input
-            type="text"
-            name="subject"
-            placeholder="Subject"
-            required
-        >
-
-        <textarea
-            name="message"
-            placeholder="Your Message"
-            required
-        ></textarea>
-
-        <button type="submit" class="btn">
-            Send Message
-        </button>
-
-    </form>
-
-</div>
-```
 
 </main>
 
